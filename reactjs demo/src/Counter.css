@@ -1,0 +1,29 @@
+.container{
+    display: flex;
+    width: 100%;
+    margin-top: 200px;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+button{
+    background: cadetblue;
+    padding: 15px 35px;
+    color: #ffff;
+    border: none;
+    outline: none;
+    font-size: 25px;
+    font-weight: 900;
+}
+p{
+    background: cadetblue;
+    padding: 15px 50px;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 900;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+    color: cadetblue;
+}
