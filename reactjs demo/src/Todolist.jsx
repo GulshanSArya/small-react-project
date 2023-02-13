@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import CloseIcon from '@mui/icons-material/Close';
 import EditIcon from '@mui/icons-material/Edit';
-//import YouTubeIcon from '@mui/icons-material/YouTube';
+import YouTubeIcon from '@mui/icons-material/YouTube';
 
 
 function TodoList() {
@@ -26,7 +26,7 @@ function TodoList() {
   }
 
   function handleDeletion(itemToDelete) {
-    // console.log(itemToDelete)
+     console.log(itemToDelete)
     setTasks(tasks.filter((item, index) => {
       return index !== itemToDelete
     }))
@@ -37,7 +37,7 @@ function TodoList() {
     setUpdating(itemToUpdate)
   }
 
-  // console.log(tasks)
+  console.log(tasks)
   return (
     <>
       <form action="" onSubmit={handleSubmit}>
@@ -52,7 +52,7 @@ function TodoList() {
                 {item}
                 <CloseIcon className='cross' onClick={() => handleDeletion(index)} />
                 <EditIcon className='pencil' onClick={() => handleUpdation(index)} />
-                {/* < YouTubeIcon /> */}
+                < YouTubeIcon />
               </li>
             )
           })
@@ -61,4 +61,4 @@ function TodoList() {
     </>
   )
 }
-export default TodoList
+export default TodoList;
